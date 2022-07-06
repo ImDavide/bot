@@ -37,4 +37,4 @@ client.commands = new Discord.Collection();
 
 require(`./Handlers/Events_N`)(client, Discord)
 
-client.login(process.env.DISCORD_TOKEN)
+client.login("OTkwNzA2MTc0OTMwMzI1NTY0.GfGlC2.ElJoUXXev4hPMHhf1oxYi41_4MVusjuRruNhWM")
