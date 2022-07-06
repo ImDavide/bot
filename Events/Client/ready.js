@@ -1,7 +1,7 @@
 const { Client } = require("discord.js")
 const mongoose = require("mongoose")
-const mongoDBPR = "mongodb+srv://davide:davide@davidestudios1.wqjiv.mongodb.net/data"
-const mongoDBSC = "mongodb+srv://davide:davide@davidestudios1.wqjiv.mongodb.net/data"
+const mongoDBPR = MONGOURLPR
+const mongoDBSC = MONGOURLSC
 
 module.exports = {
     // ready should be a once event
