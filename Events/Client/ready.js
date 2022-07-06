@@ -17,7 +17,7 @@ module.exports = {
         console.log(`${client.user.tag} is now online!`)
 
         // Set your activity if you want
-        client.user.setActivity("DragoLuca Official Bot", { type: "WATCHING" })
+        client.user.setActivity("DS Studios", { type: "WATCHING" })
 
         // Connecting to MONGODB
         if (!mongoDBPR) return
