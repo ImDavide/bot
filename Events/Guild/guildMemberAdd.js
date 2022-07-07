@@ -8,7 +8,7 @@ module.exports = {
      */
 async execute(member) {
     const { user, guild } = member;
-    const logsChannel = guild.client.channels.cache.get("937817949560012830");
+    const logsChannel = guild.client.channels.cache.get("989230949164269578");
     const dateText = `<t:${Math.round(new Date().getTime() / 1000)}>` 
     const embed = new MessageEmbed()
               .setColor("#0066FF")
