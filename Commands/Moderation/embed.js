@@ -34,11 +34,11 @@ module.exports = {
         const title = options.getString("title")
         const image = options.getString("image")
         const tag = options.getMentionable('tag')
-
+        if(image && image.includes("http"))         embed.setImage(image);
         const Response = new MessageEmbed()
         .setTitle(`${title}`)
         .setDescription(`*By* ${interaction.member} for ${tag}`) 
-        .setImage(`${image}`)
+
         .setColor("#2F3136")
         .setTimestamp()
         .setFooter({text: "DS Studios", iconURL: "https://cdn.discordapp.com/attachments/989230929362976828/990400243101233152/IMG-20220625-WA0017.jpg"})    
