@@ -30,19 +30,20 @@ module.exports = {
      */
     async execute(interaction, client) {
         const { options }= interaction;
-
         const title = options.getString("title")
         const image = options.getString("image")
         const tag = options.getMentionable('tag')
-        if(image && image.includes("http"))         embed.setImage(image);
-        const Response = new MessageEmbed()
+      
+        
+        const embed = new MessageEmbed()
         .setTitle(`${title}`)
         .setDescription(`*By* ${interaction.member} for ${tag}`) 
-
         .setColor("#2F3136")
         .setTimestamp()
-        .setFooter({text: "DS Studios", iconURL: "https://cdn.discordapp.com/attachments/989230929362976828/990400243101233152/IMG-20220625-WA0017.jpg"})    
-        const message = await interaction.reply({ content: 'Messaggio creato ✅', fetchReply:true, ephemeral: true})
-        const masi = await interaction.channel.send({embeds: [Response]})
+        .setFooter({text: "DS Studios", iconURL: "https://cdn.discordapp.com/attachments/989230929362976828/990400243101233152/IMG-20220625-WA0017.jpg"})  
+          
+        if(image && image.includes("http"))         embed.setImage(image);
+         interaction.reply({ content: 'Messaggio creato ✅', fetchReply:true, ephemeral: true})
+       interaction.channel.send({embeds: [embed]})
     }
 } 
