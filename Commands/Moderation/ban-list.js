@@ -22,7 +22,7 @@ module.exports = {
             .setDescription(`${banned}`)
             .setTimestamp()
             .setColor("BLUE")
-            .setFooter({ text: "Banned List by Drago" })
+            .setFooter(guild.name, guild.iconURL())
 
         return interaction.reply({
             embeds: [Embed]
