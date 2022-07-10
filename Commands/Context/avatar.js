@@ -17,10 +17,10 @@ module.exports = {
         const target = await guild.members.fetch(targetId)
 
         const Embed = new MessageEmbed()
-            .setColor("BLUE")
-            .setAuthor({ name: `${target.user.username}'s Avatar` })
+            .setColor("#034efc")
+            .setAuthor({ name: `${target.user.username}\'s Avatar`, iconURL: `${target.displayAvatarURL({ dynamic: true, size: 512 })}` })
             .setImage(`${target.displayAvatarURL({ dynamic: true, size: 4096 })}`)
-            .setFooter({ text: "DS Studios" })
+            .setFooter(guild.name, guild.iconURL())
             .setTimestamp()
 
             const row = new MessageActionRow()
