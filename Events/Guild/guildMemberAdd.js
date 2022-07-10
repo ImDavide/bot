@@ -8,12 +8,12 @@ module.exports = {
      */
 async execute(member) {
     const { user, guild } = member;
-    const logsChannel = guild.client.channels.cache.get("989230949164269578");
+    const logsChannel = guild.client.channels.cache.get("995379652388466708");
     const dateText = `<t:${Math.round(new Date().getTime() / 1000)}>` 
     const embed = new MessageEmbed()
               .setColor("#0066FF")
               .setAuthor({name: `${member.user.tag}`, iconURL: `${member.user.displayAvatarURL()}`})
-              .setDescription(`Hi ${member.user}, Welcome to **DS Studios** \n \n Verify in the channel <#989230952045744208>`)
+              .setDescription(`Hi ${member.user}, Welcome to **DS Studios** \n \n Verify in the channel <#995379652388466708>`)
               .setThumbnail(member.user.displayAvatarURL())
               .setTimestamp()
               .setFooter({ text:`DS Studios®`, iconURL: `https://cdn.discordapp.com/attachments/937817949560012830/994703931307474953/davide_studios.png`})
